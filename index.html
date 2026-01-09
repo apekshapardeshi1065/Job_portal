@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>Job Portal</h1>
+  <input type="text" id="search" placeholder="Search jobs...">
+</header>
+
+<main>
+  <div id="jobs"></div>
+</main>
+
+
+<div id="applyModal" class="modal">
+  <div class="modal-content">
+    <h2>Apply for Job</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email">
+    <select id="experience">
+      <option value="">Experience</option>
+      <option>Fresher</option>
+      <option>1-2 Years</option>
+      <option>3+ Years</option>
+    </select>
+    <button id="submitApply">Submit</button>
+    <button class="close" onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
